@@ -32,8 +32,8 @@ public class App {
     }, new VelocityTemplateEngine());
   }
 
-  public static <OutputClass> methodName (<Class> arg) {
-    
+  public static <OutputClass> methodName(<Class> arg) {
+
   }
 
   */
