@@ -2,9 +2,10 @@ import java.util.Random;
 import java.util.HashMap;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.lang.*;
 import static spark.Spark.*;
 import spark.ModelAndView;
-// import spark.template.velocity.VelocityTemplateEngine;
+import spark.template.velocity.VelocityTemplateEngine;
 import java.util.Map;
 
 public class App {
@@ -19,9 +20,9 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    get("/newPage", (request, response) -> {
+    get("/newpage", (request, response) -> {
       HashMap model = new HashMap();
-      model.put("template", "templates/newPage.vtl");
+      model.put("template", "templates/newpage.vtl");
 
       <Class> param = request.queryParams("param");
       model.put("param", param);
