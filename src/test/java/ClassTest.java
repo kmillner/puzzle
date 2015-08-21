@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 public class ClassTest {
 
+  @Rule
+  public ClearRule clearRule = new ClearRule();
+
   // ~~UNIT TESTING~~
   // @Test
   // public void methodName_whatIsBeingTested_desiredResult() {
