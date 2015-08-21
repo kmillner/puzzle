@@ -18,29 +18,19 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  /*
-  ~~UNIT TESTING~~
-  @Test
-  public void methodName_whatIsBeingTested_desiredResult() {
-    App a = new App();
-    <Class> expValue = x;
-    assertEquals(expValue, a.methodName(param));
-  }
+  // ~~INTEGRATION TESTING~~
+  // @Test
+  // public void rootTest() {
+  //   goTo("http://localhost:4567/");
+  //   assertThat(pageSource()).contains("Something");
+  // }
+  //
+  // @Test
+  // public void newPage_desiredResult() {
+  //   goTo("starting_page_url");
+  //   fill("#input_id").with("input");
+  //   submit(".btn");
+  //   assertThat(pageSource()).contains("Some result of input");
+  // }
 
-  ~~INTEGRATION TESTING~~
-  @Test
-  public void rootTest() {
-    goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("Something");
-  }
-
-  @Test
-  public void newPage_desiredResult() {
-    goTo("starting_page_url");
-    fill("#input_id").with("input");
-    submit(".btn");
-    assertThat(pageSource()).contains("Some result of input");
-  }
-  */
-  
 }
