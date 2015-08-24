@@ -5,7 +5,10 @@ import static org.junit.Assert.*;
 public class ClassTest {
 
   @Rule
-  public ClearRule clearRule = new ClearRule();
+  public DatabaseRule database = new DatabaseRule();
+
+  // @Rule
+  // public ClearRule clearRule = new ClearRule();
 
   // ~~UNIT TESTING~~
   // @Test
