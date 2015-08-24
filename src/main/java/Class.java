@@ -1,3 +1,4 @@
+import org.sql2o.*;
 // import stuff
 
 public class Class {
