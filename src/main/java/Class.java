@@ -9,6 +9,17 @@ public class Class {
     // instantiate - assign values to variables, etc.
   }
 
+  @Override
+  public boolean equals(Object otherClassInstance){
+    if (!(otherClassInstance instanceof Class)) {
+      return false;
+    } else {
+      Class newClassInstance = (Class) otherClassInstance;
+      return this.getId() == newClassInstance.getId(); // &&
+          // this.anyOtherAttributes().equals(newClassInstance.anyOtherAttributes());      
+    }
+  }
+
   // Class methods
 
 }
