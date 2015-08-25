@@ -7,12 +7,15 @@ public class ClassTest {
   @Rule
   public DatabaseRule database = new DatabaseRule();
 
-  // ~~UNIT TESTING~~
+  @Test
+  public void all_emptyAtFirst() {
+    assertEquals(0, Class.all().size());
+  }
+
   // @Test
   // public void methodName_whatIsBeingTested_desiredResult() {
-  //   App a = new App();
-  //   <Class> expValue = x;
-  //   assertEquals(expValue, a.methodName(param));
+  //   Class instance = new Class();
+  //   assertEquals(expectedValue, instance.methodName(param));
   // }
 
 }
