@@ -14,13 +14,6 @@ public class Class {
     return id;
   }
 
-  public static List<Class> all() {
-    String sql = "SELECT * FROM table_name";
-    try(Connection con = DB.sql2o.open()) {
-      return con.createQuery(sql).executeAndFetch(Class.class);
-    }
-  }
-
   @Override
   public boolean equals(Object otherClassInstance) {
     if (!(otherClassInstance instanceof Class)) {
@@ -31,5 +24,16 @@ public class Class {
                 this.getId() == newClassInstance.getId();
     }
   }
+
+  public static List<Class> all() {
+    String sql = "SELECT * FROM table_name";
+    try(Connection con = DB.sql2o.open()) {
+      return con.createQuery(sql).executeAndFetch(Class.class);
+    }
+  }
+
+  // public void save() {}
+
+  //public static Class find(int id) {}
 
 }
