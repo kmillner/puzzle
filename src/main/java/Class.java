@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Class {
 
-   private int id;
+  private int id;
 
   public Class () {
     // pass ^arguments as necessary.
@@ -25,14 +25,18 @@ public class Class {
     }
   }
 
+  // public void save() {}
+
+  // public void update() {}
+
+  // public void delete() {}
+
   public static List<Class> all() {
     String sql = "SELECT * FROM table_name";
     try(Connection con = DB.sql2o.open()) {
       return con.createQuery(sql).executeAndFetch(Class.class);
     }
   }
-
-  // public void save() {}
 
   //public static Class find(int id) {}
 

@@ -1,6 +1,5 @@
 import org.junit.*;
 import static org.junit.Assert.*;
-// import anything else needed
 
 public class ClassTest {
 
