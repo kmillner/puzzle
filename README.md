@@ -10,16 +10,30 @@
 
 ## Setup
 
+* Set up the database in PostgreSQL by running the following commands in your terminal:
+```
+  psql
+  CREATE DATABASE database_name;
+  \c database_name;
+  CREATE TABLE table_name (id serial PRIMARY KEY, attribute varchar);
+```
+* If you wish to run tests, create a test database:
+```
+  CREATE DATABASE database_name_test WITH TEMPLATE database_name;
+```
 * Clone this repository.
 * Using the command line, navigate to the top level of the cloned directory.
 * Make sure you have gradle installed. Then run the following command in your terminal:
-* _gradle run_
+```
+  gradle run
+```
 * Go to localhost:4567.
 * Go!
 
 ## Technologies Used
 
 * Java
+* PostgreSQL
 * Spark
 * Velocity
 * Gradle
