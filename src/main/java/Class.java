@@ -25,7 +25,15 @@ public class Class {
     }
   }
 
-  // public void save() {}
+  public void save() {
+    try(Connection con = DB.sql2o.open()) {
+      String sql = "INSERT INTO table_name (attribute) VALUES (:attribute);";
+      this.id = (int) con.createQuery(sql, true)
+          .addParameter("attribute", attribute)
+          .executeUpdate()
+          .getKey();
+    }
+  }
 
   // public void update() {}
 
