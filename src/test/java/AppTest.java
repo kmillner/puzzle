@@ -24,7 +24,6 @@ public class AppTest extends FluentTest {
   @Rule
   public DatabaseRule database = new DatabaseRule();
 
-  // ~~INTEGRATION TESTING~~
   // @Test
   // public void rootTest() {
   //   goTo("http://localhost:4567/");
