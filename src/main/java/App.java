@@ -22,16 +22,6 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    // post("/newpage", (request, response) -> {
-    //   HashMap<String, Object> model = new HashMap<String, Object>();
-    //
-    //   <Class> param = request.queryParams("param");
-    //   model.put("param", param);
-    //
-    //   model.put("template", "templates/newpage.vtl");
-    //   return new ModelAndView(model, layout);
-    // }, new VelocityTemplateEngine());
-
   }
 
 }
