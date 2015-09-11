@@ -1,0 +1,14 @@
+<h1>Your new word is now a wuzzle-puzzle!</h1>
+#if($isBlank)
+<h3>JK, it isn't!<h3>
+#else
+<h3>$puzzledWord</h3>
+#end
+
+<button onclick="goBack()" class="btn btn-info">Try Again!</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

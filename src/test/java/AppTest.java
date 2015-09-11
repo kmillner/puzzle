@@ -21,21 +21,18 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  @Rule
-  public DatabaseRule database = new DatabaseRule();
 
-  // @Test
-  // public void rootTest() {
-  //   goTo("http://localhost:4567/");
-  //   assertThat(pageSource()).contains("Something");
-  // }
-  //
-  // @Test
-  // public void newPage_desiredResult() {
-  //   goTo("starting_page_url");
-  //   fill("#input_id").with("input");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Some result of input");
-  // }
+  @Test
+  public void rootTest() {
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Word Puzzle");
+  }
+  @Test
+   public void puzzledTest() {
+       goTo("http://localhost:4567/");
+       fill("#word").with("Believe you can and you're halfway there. Theodore Roosevelt");
+       submit(".btn");
+       assertThat(pageSource()).contains("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt");
+   }
 
 }

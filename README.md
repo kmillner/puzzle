@@ -1,25 +1,15 @@
-# Application Name
+# Word Puzzle
 
-##### _{Brief description of application}, {Date of current version}_
+##### _{Word Puzzle}, {Sept 2015}_
 
-#### By **Molly Waggett**
+#### By **Kallen Millner**
 
 ## Description
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}
+{The user can insert words that will make puzzles that another user can try and guess!}
 
 ## Setup
 
-* Set up the database in PostgreSQL by running the following commands in your terminal:
-```
-  psql
-  CREATE DATABASE database_name;
-  \c database_name;
-  CREATE TABLE table_name (id serial PRIMARY KEY, attribute varchar);
-```
-* If you wish to run tests, create a test database:
-```
-  CREATE DATABASE database_name_test WITH TEMPLATE database_name;
 ```
 * Clone this repository.
 * Using the command line, navigate to the top level of the cloned directory.
@@ -33,7 +23,6 @@
 ## Technologies Used
 
 * Java
-* PostgreSQL
 * Spark
 * Velocity
 * Gradle
@@ -42,7 +31,7 @@
 
 ### Legal
 
-Copyright (c) 2015 **Molly Waggett**
+Copyright (c) 2015 **Kallen Millner**
 
 This software is licensed under the MIT license.
 
